@@ -1,0 +1,58 @@
+{
+  "name": "@broca/frontend",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Broca",
+  "keywords": [
+    "broca",
+    "next.js"
+  ],
+  "homepage": "https://github.com/hieudoanm/broca#readme",
+  "bugs": {
+    "url": "https://github.com/hieudoanm/broca/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hieudoanm/broca.git"
+  },
+  "license": "GPL-3.0",
+  "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
+  "scripts": {
+    "format": "prettier --cache --write .",
+    "predev": "kill-port 3001",
+    "dev": "next dev -p 3001 --turbopack",
+    "prebuild": "rimraf .next docs",
+    "build": "next build",
+    "prestart": "kill-port 3001",
+    "start": "next start -p 3001",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "15.1.6",
+    "next-pwa": "5.6.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-icons": "5.4.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "3.2.0",
+    "@tailwindcss/postcss": "4.0.4",
+    "@types/next-pwa": "5.6.9",
+    "@types/node": "22.13.1",
+    "@types/react": "19.0.8",
+    "@types/react-dom": "19.0.3",
+    "eslint": "9.20.0",
+    "eslint-config-next": "15.1.6",
+    "husky": "9.1.7",
+    "kill-port": "2.0.1",
+    "postcss": "8.5.1",
+    "prettier": "3.4.2",
+    "prettier-plugin-tailwindcss": "0.6.11",
+    "rimraf": "6.0.1",
+    "tailwindcss": "4.0.4",
+    "typescript": "5.7.3"
+  },
+  "resolutions": {
+    "next": "15.1.6"
+  }
+}

@@ -1,28 +1,27 @@
 {
-  "name": "broca-wernicke",
+  "name": "broca",
   "version": "0.0.1",
-  "description": "Broca & Wernicke",
+  "private": true,
+  "description": "Broca",
   "keywords": [
     "broca",
     "wernicke"
   ],
-  "homepage": "https://github.com/hieudoanm/broca-wernicke#readme",
+  "homepage": "https://github.com/hieudoanm/broca#readme",
   "bugs": {
-    "url": "https://github.com/hieudoanm/broca-wernicke/issues"
+    "url": "https://github.com/hieudoanm/broca/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/hieudoanm/broca-wernicke.git"
+    "url": "git+ssh://git@github.com/hieudoanm/broca.git"
   },
   "license": "GPL-3.0",
   "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
-  "main": "index.js",
-  "private": true,
   "scripts": {
     "format": "prettier --cache --write .",
     "predev": "kill-port 3001",
     "dev": "next dev -p 3001 --turbopack",
-    "prebuild": "rimraf .next",
+    "prebuild": "rimraf .next docs",
     "build": "next build",
     "prestart": "kill-port 3001",
     "start": "next start -p 3001",

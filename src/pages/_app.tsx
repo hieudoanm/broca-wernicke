@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Broca X Wernicke</title>
+        <title>Broca</title>
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
       <div className={mono.className}>

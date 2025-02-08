@@ -63,7 +63,7 @@ const HomePage: NextPage = () => {
   return (
     <div className="h-screen w-screen">
       <div className="flex h-full w-full items-center justify-center">
-        <div className="flex w-full max-w-xs flex-col items-center gap-y-2 rounded-2xl border p-4">
+        <div className="flex w-full max-w-xs flex-col items-center gap-y-2 rounded-2xl border bg-black p-4 text-white">
           <div className="flex w-full items-center justify-between">
             <button
               type="button"
@@ -90,7 +90,7 @@ const HomePage: NextPage = () => {
               Maintainer
             </button>
           </div>
-          <hr className="w-full bg-black" />
+          <hr className="w-full border-white" />
           {models.map(
             (
               {

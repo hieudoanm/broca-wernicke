@@ -15,7 +15,9 @@ importers:
         specifier: 2.4.0
         version: 2.4.0
 
-  frontend:
+  packages/backend: {}
+
+  packages/frontend:
     dependencies:
       next:
         specifier: 15.1.6

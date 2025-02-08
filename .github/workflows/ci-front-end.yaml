@@ -1,4 +1,4 @@
-name: Continuous Integration
+name: CI - Front-end
 
 on:
   push:
@@ -12,7 +12,7 @@ on:
 
 jobs:
   ci:
-    name: Continuous Integration
+    name: CI - Front-end
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,5 +29,7 @@ jobs:
         run: pnpm install
       - name: Linting
         run: pnpm run lint
+        working-directory: "./frontend"
       - name: Build Production
         run: pnpm run build
+        working-directory: "./frontend"

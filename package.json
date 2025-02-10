@@ -17,6 +17,6 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "husky": "9.1.7",
-    "turbo": "2.4.0"
+    "turbo": "2.4.1"
   }
 }
